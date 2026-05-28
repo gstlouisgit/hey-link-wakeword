@@ -3,11 +3,14 @@
   "wake_word": "hey_link",
   "author": "Guy Saint-Louis",
   "website": "http://192.168.10.10",
-  "version": 1,
-  "model": "http://192.168.10.10:8765/hey_link.tflite",
+  "version": 2,
+  "model": "https://raw.githubusercontent.com/gstlouisgit/hey-link-wakeword/main/hey_link.tflite",
+  "trained_languages": ["en"],
   "micro": {
-    "probability_cutoff": 0.99,
-    "sliding_window_average_size": 10,
-    "feature_step_size": 10
+    "probability_cutoff": 0.50,
+    "sliding_window_size": 5,
+    "feature_step_size": 10,
+    "tensor_arena_size": 45000,
+    "minimum_esphome_version": "2024.2.0"
   }
 }
