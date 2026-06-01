@@ -7,7 +7,7 @@
   "model": "https://raw.githubusercontent.com/gstlouisgit/hey-link-wakeword/main/hey_link.tflite",
   "trained_languages": ["en"],
   "micro": {
-    "probability_cutoff": 0.85,
+    "probability_cutoff": 0.75,
     "sliding_window_size": 5,
     "feature_step_size": 10,
     "tensor_arena_size": 45000,
